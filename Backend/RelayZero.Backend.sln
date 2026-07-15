@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayZero.ControlPlane.Api", "src\RelayZero.ControlPlane.Api\RelayZero.ControlPlane.Api.csproj", "{A10CAC74-7F00-4B23-A7E6-0F469C09E191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayZero.ControlPlane.Application", "src\RelayZero.ControlPlane.Application\RelayZero.ControlPlane.Application.csproj", "{908E5C1F-AB26-4A3E-BAA1-208BC0311CB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayZero.ControlPlane.Domain", "src\RelayZero.ControlPlane.Domain\RelayZero.ControlPlane.Domain.csproj", "{320BDBC8-70A9-43F5-BE6D-EC355BE66168}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayZero.ControlPlane.Infrastructure", "src\RelayZero.ControlPlane.Infrastructure\RelayZero.ControlPlane.Infrastructure.csproj", "{8D343EE2-9BAA-41F2-996F-7B9E44442EC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelayZero.ControlPlane.Architecture.Tests", "tests\RelayZero.ControlPlane.Architecture.Tests\RelayZero.ControlPlane.Architecture.Tests.csproj", "{38691FFE-3309-47BB-A790-81FE09293B43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10CAC74-7F00-4B23-A7E6-0F469C09E191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10CAC74-7F00-4B23-A7E6-0F469C09E191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10CAC74-7F00-4B23-A7E6-0F469C09E191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10CAC74-7F00-4B23-A7E6-0F469C09E191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{908E5C1F-AB26-4A3E-BAA1-208BC0311CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{908E5C1F-AB26-4A3E-BAA1-208BC0311CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{908E5C1F-AB26-4A3E-BAA1-208BC0311CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{908E5C1F-AB26-4A3E-BAA1-208BC0311CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320BDBC8-70A9-43F5-BE6D-EC355BE66168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320BDBC8-70A9-43F5-BE6D-EC355BE66168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320BDBC8-70A9-43F5-BE6D-EC355BE66168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320BDBC8-70A9-43F5-BE6D-EC355BE66168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D343EE2-9BAA-41F2-996F-7B9E44442EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D343EE2-9BAA-41F2-996F-7B9E44442EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D343EE2-9BAA-41F2-996F-7B9E44442EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D343EE2-9BAA-41F2-996F-7B9E44442EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38691FFE-3309-47BB-A790-81FE09293B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38691FFE-3309-47BB-A790-81FE09293B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38691FFE-3309-47BB-A790-81FE09293B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38691FFE-3309-47BB-A790-81FE09293B43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD69EB36-5E87-4726-A314-64D40376D7F3}
+	EndGlobalSection
+EndGlobal

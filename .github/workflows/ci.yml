@@ -1,0 +1,53 @@
+name: Relay Zero CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  backend:
+    name: Backend policy, build, and tests
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        shell: pwsh
+        run: ./Scripts/Invoke-Restore.ps1
+
+      - name: Compile backend
+        shell: pwsh
+        run: ./Scripts/Invoke-Compile.ps1 -SkipUnity
+
+      - name: Test backend
+        shell: pwsh
+        run: ./Scripts/Invoke-Test.ps1 -SkipUnity
+
+      - name: Clean check
+        shell: pwsh
+        run: ./Scripts/Invoke-CleanCheck.ps1
+
+  unity-editmode:
+    name: Unity EditMode tests
+    runs-on: windows-latest
+    if: ${{ vars.UNITY_CI_ENABLED == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unity test runner
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: Unity
+          unityVersion: 6000.4.3f1
+          testMode: editmode
+          artifactsPath: TestResults

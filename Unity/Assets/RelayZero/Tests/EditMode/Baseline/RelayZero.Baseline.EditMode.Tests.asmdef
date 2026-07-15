@@ -1,0 +1,21 @@
+{
+  "name": "RelayZero.Baseline.EditMode.Tests",
+  "rootNamespace": "RelayZero.Tests.EditMode.Baseline",
+  "references": [],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

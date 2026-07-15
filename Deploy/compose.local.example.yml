@@ -1,0 +1,12 @@
+services:
+  control-plane:
+    image: mcr.microsoft.com/dotnet/aspnet:10.0
+    env_file:
+      - .env
+    ports:
+      - "5080:8080"
+
+  redis:
+    image: redis:8
+    ports:
+      - "6379:6379"

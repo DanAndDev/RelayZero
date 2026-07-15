@@ -1,0 +1,16 @@
+{
+  "unity": {
+    "projectPath": "Unity",
+    "editorVersion": "6000.4.3f1",
+    "documentedBaseline": "6000.3.19f1",
+    "documentedBaselineMismatchApproved": true
+  },
+  "dotnet": {
+    "sdkVersion": "10.0.302",
+    "rollForward": "latestPatch"
+  },
+  "checks": {
+    "windowsEntryPoint": "Scripts/Invoke-LocalCheck.ps1",
+    "ciEntryPoint": "Scripts/ci/local-check.sh"
+  }
+}
