@@ -1,0 +1,17 @@
+{
+  "name": "RelayZero.AI",
+  "rootNamespace": "RelayZero.AI",
+  "references": [
+    "RelayZero.Foundation",
+    "RelayZero.Simulation"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "RelayZero.Bootstrap",
+  "rootNamespace": "RelayZero.Bootstrap",
+  "references": [
+    "RelayZero.Foundation"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

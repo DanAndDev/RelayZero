@@ -1,0 +1,19 @@
+{
+  "name": "RelayZero.Infrastructure",
+  "rootNamespace": "RelayZero.Infrastructure",
+  "references": [
+    "RelayZero.Foundation",
+    "RelayZero.Client.Application"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "!UNITY_SERVER"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,17 @@
+{
+  "name": "RelayZero.Simulation",
+  "rootNamespace": "RelayZero.Simulation",
+  "references": [
+    "RelayZero.Foundation",
+    "Unity.Mathematics"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}

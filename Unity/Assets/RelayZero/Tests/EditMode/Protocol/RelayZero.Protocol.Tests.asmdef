@@ -1,0 +1,23 @@
+{
+  "name": "RelayZero.Protocol.Tests",
+  "rootNamespace": "RelayZero.Tests.EditMode.Protocol",
+  "references": [
+    "RelayZero.Protocol"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

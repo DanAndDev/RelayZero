@@ -1,0 +1,20 @@
+{
+  "name": "RelayZero.Client.Prediction",
+  "rootNamespace": "RelayZero.Client.Prediction",
+  "references": [
+    "RelayZero.Foundation",
+    "RelayZero.Simulation",
+    "RelayZero.Protocol"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "!UNITY_SERVER"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": true
+}

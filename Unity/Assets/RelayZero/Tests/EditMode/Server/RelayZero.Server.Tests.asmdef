@@ -1,0 +1,23 @@
+{
+  "name": "RelayZero.Server.Tests",
+  "rootNamespace": "RelayZero.Tests.EditMode.Server",
+  "references": [
+    "RelayZero.Server"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

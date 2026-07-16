@@ -1,0 +1,22 @@
+{
+  "name": "RelayZero.PlayMode.Tests",
+  "rootNamespace": "RelayZero.Tests.PlayMode",
+  "references": [
+    "RelayZero.Bootstrap",
+    "RelayZero.Foundation"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

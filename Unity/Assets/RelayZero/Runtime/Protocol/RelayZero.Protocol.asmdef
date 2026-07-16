@@ -1,0 +1,17 @@
+{
+  "name": "RelayZero.Protocol",
+  "rootNamespace": "RelayZero.Protocol",
+  "references": [
+    "RelayZero.Foundation",
+    "RelayZero.Simulation"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}

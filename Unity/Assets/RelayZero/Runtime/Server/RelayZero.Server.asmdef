@@ -1,0 +1,20 @@
+{
+  "name": "RelayZero.Server",
+  "rootNamespace": "RelayZero.Server",
+  "references": [
+    "RelayZero.Foundation",
+    "RelayZero.Simulation",
+    "RelayZero.Protocol",
+    "RelayZero.AI",
+    "RelayZero.Transport"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": true
+}

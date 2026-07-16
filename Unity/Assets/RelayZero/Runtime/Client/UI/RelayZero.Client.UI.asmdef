@@ -1,0 +1,19 @@
+{
+  "name": "RelayZero.Client.UI",
+  "rootNamespace": "RelayZero.Client.UI",
+  "references": [
+    "RelayZero.Client.Application",
+    "RelayZero.Client.Presentation"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "!UNITY_SERVER"
+  ],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
