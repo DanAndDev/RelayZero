@@ -5,5 +5,6 @@ namespace RelayZero.Bootstrap
         Bootstrap,
         Frontend,
         SwitchyardPlaceholder,
+        Switchyard,
     }
 }

@@ -12,6 +12,9 @@ namespace RelayZero.Tests.EditMode.Architecture
     {
         private static readonly Dictionary<string, string[]> ExpectedRuntimeReferences = new Dictionary<string, string[]>(StringComparer.Ordinal)
         {
+            ["RelayZero.Arena"] = Array.Empty<string>(),
+            ["RelayZero.Arena.Authoring"] = Array.Empty<string>(),
+            ["RelayZero.Arena.Baking"] = new[] { "RelayZero.Arena" },
             ["RelayZero.Foundation"] = Array.Empty<string>(),
             ["RelayZero.Simulation"] = new[] { "RelayZero.Foundation" },
             ["RelayZero.Protocol"] = new[] { "RelayZero.Foundation", "RelayZero.Simulation" },

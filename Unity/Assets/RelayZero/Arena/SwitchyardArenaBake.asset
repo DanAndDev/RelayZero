@@ -1,0 +1,785 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62c9861a5f2e7d40ac18773b9dc2678, type: 3}
+  m_Name: SwitchyardArenaBake
+  m_EditorClassIdentifier: RelayZero.Arena.Baking::RelayZero.Arena.Baking.ArenaBakeAsset
+  bakeVersion: 1
+  contentHash: aef38c249bb2215f1fbd713bccb59e66729699757e28542cb0643113b56bcfe7
+  sourceScene: Assets/Scenes/Switchyard.unity
+  elements:
+  - id: 1696
+    stableId: pylon.south-west
+    kind: 3
+  - id: 2397
+    stableId: nav.pylon.south-west.inner
+    kind: 11
+  - id: 2627
+    stableId: gate.beta
+    kind: 6
+  - id: 4408
+    stableId: nav.lane.beta
+    kind: 11
+  - id: 6394
+    stableId: nav.outer.alpha.south
+    kind: 11
+  - id: 6406
+    stableId: barrier-forbidden.gate.beta
+    kind: 10
+  - id: 9101
+    stableId: barrier-forbidden.terminal.south
+    kind: 10
+  - id: 10101
+    stableId: nav.spawn.south
+    kind: 11
+  - id: 11250
+    stableId: gate.alpha
+    kind: 6
+  - id: 12917
+    stableId: wall.east
+    kind: 2
+  - id: 15136
+    stableId: relay.beta
+    kind: 4
+  - id: 15400
+    stableId: barrier-forbidden.core
+    kind: 10
+  - id: 16275
+    stableId: nav.core
+    kind: 11
+  - id: 17640
+    stableId: camera.bounds.switchyard
+    kind: 12
+  - id: 18004
+    stableId: barrier-forbidden.relay.alpha
+    kind: 10
+  - id: 19737
+    stableId: spawn.north
+    kind: 8
+  - id: 20075
+    stableId: arena.bounds.playable
+    kind: 1
+  - id: 22150
+    stableId: boost.alpha.south
+    kind: 7
+  - id: 22672
+    stableId: wall.north-west
+    kind: 2
+  - id: 23079
+    stableId: nav.terminal.north
+    kind: 11
+  - id: 23337
+    stableId: relay.alpha
+    kind: 4
+  - id: 27774
+    stableId: nav.pylon.north-east.inner
+    kind: 11
+  - id: 28090
+    stableId: terminal.north
+    kind: 5
+  - id: 30049
+    stableId: boost.beta.south
+    kind: 7
+  - id: 31422
+    stableId: boost.beta.north
+    kind: 7
+  - id: 33979
+    stableId: pylon.south-east
+    kind: 3
+  - id: 34079
+    stableId: nav.relay.alpha
+    kind: 11
+  - id: 34432
+    stableId: terminal.south
+    kind: 5
+  - id: 39920
+    stableId: nav.outer.beta.north
+    kind: 11
+  - id: 41166
+    stableId: barrier-forbidden.relay.beta
+    kind: 10
+  - id: 41887
+    stableId: barrier-forbidden.terminal.north
+    kind: 10
+  - id: 44351
+    stableId: pylon.north-west
+    kind: 3
+  - id: 44420
+    stableId: nav.outer.beta.south
+    kind: 11
+  - id: 46621
+    stableId: arena.switchyard
+    kind: 0
+  - id: 46772
+    stableId: core.reset.central
+    kind: 9
+  - id: 48637
+    stableId: nav.relay.beta
+    kind: 11
+  - id: 48884
+    stableId: nav.terminal.south
+    kind: 11
+  - id: 52379
+    stableId: wall.north-east
+    kind: 2
+  - id: 53526
+    stableId: wall.south
+    kind: 2
+  - id: 53659
+    stableId: nav.spawn.north
+    kind: 11
+  - id: 54204
+    stableId: wall.south-east
+    kind: 2
+  - id: 55242
+    stableId: barrier-forbidden.gate.alpha
+    kind: 10
+  - id: 55940
+    stableId: pylon.north-east
+    kind: 3
+  - id: 56270
+    stableId: wall.south-west
+    kind: 2
+  - id: 60074
+    stableId: spawn.south
+    kind: 8
+  - id: 60591
+    stableId: boost.alpha.north
+    kind: 7
+  - id: 61006
+    stableId: nav.lane.alpha
+    kind: 11
+  - id: 62420
+    stableId: nav.outer.alpha.north
+    kind: 11
+  - id: 62840
+    stableId: nav.pylon.north-west.inner
+    kind: 11
+  - id: 63670
+    stableId: nav.pylon.south-east.inner
+    kind: 11
+  - id: 63915
+    stableId: wall.north
+    kind: 2
+  - id: 64066
+    stableId: wall.west
+    kind: 2
+  bounds:
+    id: 20075
+    center: {x: 0, y: 0}
+    halfExtents: {x: 14, y: 10}
+  walls:
+  - id: 12917
+    start: {x: 14, y: 7.5}
+    end: {x: 14, y: -7.5}
+    normal: {x: -1, y: 0}
+    thickness: 0.5
+    minimum: {x: 13.75, y: -7.75}
+    maximum: {x: 14.25, y: 7.75}
+    playerExpandedMinimum: {x: 13.299999, y: -8.2}
+    playerExpandedMaximum: {x: 14.7, y: 8.2}
+  - id: 22672
+    start: {x: -14, y: 7.5}
+    end: {x: -11.5, y: 10}
+    normal: {x: 0.7071, y: -0.7071}
+    thickness: 0.5
+    minimum: {x: -14.25, y: 7.25}
+    maximum: {x: -11.25, y: 10.25}
+    playerExpandedMinimum: {x: -14.7, y: 6.7999997}
+    playerExpandedMaximum: {x: -10.8, y: 10.7}
+  - id: 52379
+    start: {x: 11.5, y: 10}
+    end: {x: 14, y: 7.5}
+    normal: {x: -0.7071, y: -0.7071}
+    thickness: 0.5
+    minimum: {x: 11.25, y: 7.25}
+    maximum: {x: 14.25, y: 10.25}
+    playerExpandedMinimum: {x: 10.8, y: 6.7999997}
+    playerExpandedMaximum: {x: 14.7, y: 10.7}
+  - id: 53526
+    start: {x: 11.5, y: -10}
+    end: {x: -11.5, y: -10}
+    normal: {x: 0, y: 1}
+    thickness: 0.5
+    minimum: {x: -11.75, y: -10.25}
+    maximum: {x: 11.75, y: -9.75}
+    playerExpandedMinimum: {x: -12.2, y: -10.7}
+    playerExpandedMaximum: {x: 12.2, y: -9.3}
+  - id: 54204
+    start: {x: 14, y: -7.5}
+    end: {x: 11.5, y: -10}
+    normal: {x: -0.7071, y: 0.7071}
+    thickness: 0.5
+    minimum: {x: 11.25, y: -10.25}
+    maximum: {x: 14.25, y: -7.25}
+    playerExpandedMinimum: {x: 10.8, y: -10.7}
+    playerExpandedMaximum: {x: 14.7, y: -6.7999997}
+  - id: 56270
+    start: {x: -11.5, y: -10}
+    end: {x: -14, y: -7.5}
+    normal: {x: 0.7071, y: 0.7071}
+    thickness: 0.5
+    minimum: {x: -14.25, y: -10.25}
+    maximum: {x: -11.25, y: -7.25}
+    playerExpandedMinimum: {x: -14.7, y: -10.7}
+    playerExpandedMaximum: {x: -10.8, y: -6.7999997}
+  - id: 63915
+    start: {x: -11.5, y: 10}
+    end: {x: 11.5, y: 10}
+    normal: {x: 0, y: -1}
+    thickness: 0.5
+    minimum: {x: -11.75, y: 9.75}
+    maximum: {x: 11.75, y: 10.25}
+    playerExpandedMinimum: {x: -12.2, y: 9.3}
+    playerExpandedMaximum: {x: 12.2, y: 10.7}
+  - id: 64066
+    start: {x: -14, y: -7.5}
+    end: {x: -14, y: 7.5}
+    normal: {x: 1, y: 0}
+    thickness: 0.5
+    minimum: {x: -14.25, y: -7.75}
+    maximum: {x: -13.75, y: 7.75}
+    playerExpandedMinimum: {x: -14.7, y: -8.2}
+    playerExpandedMaximum: {x: -13.299999, y: 8.2}
+  obstacles:
+  - id: 1696
+    side: 0
+    vertices:
+    - {x: -4.5, y: -3.8999999}
+    - {x: -2.3, y: -3.8999999}
+    - {x: -2.3, y: -1.6999999}
+    - {x: -4.5, y: -1.6999999}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: -4.5, y: -3.8999999}
+    maximum: {x: -2.3, y: -1.6999999}
+    playerExpandedMinimum: {x: -4.95, y: -4.35}
+    playerExpandedMaximum: {x: -1.8499999, y: -1.25}
+  - id: 33979
+    side: 0
+    vertices:
+    - {x: 2.3, y: -3.8999999}
+    - {x: 4.5, y: -3.8999999}
+    - {x: 4.5, y: -1.6999999}
+    - {x: 2.3, y: -1.6999999}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: 2.3, y: -3.8999999}
+    maximum: {x: 4.5, y: -1.6999999}
+    playerExpandedMinimum: {x: 1.8499999, y: -4.35}
+    playerExpandedMaximum: {x: 4.95, y: -1.25}
+  - id: 44351
+    side: 0
+    vertices:
+    - {x: -4.5, y: 1.6999999}
+    - {x: -2.3, y: 1.6999999}
+    - {x: -2.3, y: 3.8999999}
+    - {x: -4.5, y: 3.8999999}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: -4.5, y: 1.6999999}
+    maximum: {x: -2.3, y: 3.8999999}
+    playerExpandedMinimum: {x: -4.95, y: 1.25}
+    playerExpandedMaximum: {x: -1.8499999, y: 4.35}
+  - id: 55940
+    side: 0
+    vertices:
+    - {x: 2.3, y: 1.6999999}
+    - {x: 4.5, y: 1.6999999}
+    - {x: 4.5, y: 3.8999999}
+    - {x: 2.3, y: 3.8999999}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: 2.3, y: 1.6999999}
+    maximum: {x: 4.5, y: 3.8999999}
+    playerExpandedMinimum: {x: 1.8499999, y: 1.25}
+    playerExpandedMaximum: {x: 4.95, y: 4.35}
+  circles:
+  - id: 15136
+    kind: 4
+    center: {x: 10.2, y: 0}
+    radius: 2.3999999
+  - id: 23337
+    kind: 4
+    center: {x: -10.2, y: 0}
+    radius: 2.3999999
+  - id: 28090
+    kind: 5
+    center: {x: 0, y: 5.5}
+    radius: 1.1999999
+  - id: 34432
+    kind: 5
+    center: {x: 0, y: -5.5}
+    radius: 1.1999999
+  gates:
+  - id: 2627
+    safeWhenPoweredSide: 1
+    center: {x: 6.7999997, y: 0}
+    halfExtents: {x: 0.39999998, y: 1.5999999}
+    safeSideDirection: {x: 1, y: 0}
+    minimum: {x: 6.3999996, y: -1.5999999}
+    maximum: {x: 7.2, y: 1.5999999}
+  - id: 11250
+    safeWhenPoweredSide: 0
+    center: {x: -6.7999997, y: 0}
+    halfExtents: {x: 0.39999998, y: 1.5999999}
+    safeSideDirection: {x: -1, y: 0}
+    minimum: {x: -7.2, y: -1.5999999}
+    maximum: {x: -6.3999996, y: 1.5999999}
+  boosts:
+  - id: 22150
+    side: 0
+    vertices:
+    - {x: -9.5, y: -4.15}
+    - {x: -7.7, y: -4.15}
+    - {x: -7.7, y: -2.85}
+    - {x: -9.5, y: -2.85}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: -9.5, y: -4.15}
+    maximum: {x: -7.7, y: -2.85}
+    playerExpandedMinimum: {x: -9.5, y: -4.15}
+    playerExpandedMaximum: {x: -7.7, y: -2.85}
+  - id: 30049
+    side: 1
+    vertices:
+    - {x: 7.7, y: -4.15}
+    - {x: 9.5, y: -4.15}
+    - {x: 9.5, y: -2.85}
+    - {x: 7.7, y: -2.85}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: 7.7, y: -4.15}
+    maximum: {x: 9.5, y: -2.85}
+    playerExpandedMinimum: {x: 7.7, y: -4.15}
+    playerExpandedMaximum: {x: 9.5, y: -2.85}
+  - id: 31422
+    side: 1
+    vertices:
+    - {x: 7.7, y: 2.85}
+    - {x: 9.5, y: 2.85}
+    - {x: 9.5, y: 4.15}
+    - {x: 7.7, y: 4.15}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: 7.7, y: 2.85}
+    maximum: {x: 9.5, y: 4.15}
+    playerExpandedMinimum: {x: 7.7, y: 2.85}
+    playerExpandedMaximum: {x: 9.5, y: 4.15}
+  - id: 60591
+    side: 0
+    vertices:
+    - {x: -9.5, y: 2.85}
+    - {x: -7.7, y: 2.85}
+    - {x: -7.7, y: 4.15}
+    - {x: -9.5, y: 4.15}
+    normals:
+    - {x: 0, y: -1}
+    - {x: 1, y: 0}
+    - {x: 0, y: 1}
+    - {x: -1, y: 0}
+    minimum: {x: -9.5, y: 2.85}
+    maximum: {x: -7.7, y: 4.15}
+    playerExpandedMinimum: {x: -9.5, y: 2.85}
+    playerExpandedMaximum: {x: -7.7, y: 4.15}
+  spawns:
+  - id: 19737
+    playerSlot: 0
+    position: {x: 0, y: 7.5}
+    facingDirection: {x: 0, y: -1}
+  - id: 60074
+    playerSlot: 1
+    position: {x: 0, y: -7.5}
+    facingDirection: {x: 0, y: 1}
+  coreReset:
+    id: 46772
+    position: {x: 0, y: 0}
+    pedestalRadius: 0.65
+  barrierForbiddenVolumes:
+  - id: 6406
+    shape: 1
+    center: {x: 6.7999997, y: 0}
+    radius: 0
+    halfExtents: {x: 1.4, y: 2.1}
+    reason: Shock Gate safety clearance
+  - id: 9101
+    shape: 0
+    center: {x: 0, y: -5.5}
+    radius: 1.4499999
+    halfExtents: {x: 1.4499999, y: 1.4499999}
+    reason: Terminal interaction clearance
+  - id: 15400
+    shape: 0
+    center: {x: 0, y: 0}
+    radius: 1.25
+    halfExtents: {x: 1.25, y: 1.25}
+    reason: Core pedestal and opening clearance
+  - id: 18004
+    shape: 0
+    center: {x: -10.2, y: 0}
+    radius: 1.35
+    halfExtents: {x: 1.35, y: 1.35}
+    reason: Relay pedestal clearance
+  - id: 41166
+    shape: 0
+    center: {x: 10.2, y: 0}
+    radius: 1.35
+    halfExtents: {x: 1.35, y: 1.35}
+    reason: Relay pedestal clearance
+  - id: 41887
+    shape: 0
+    center: {x: 0, y: 5.5}
+    radius: 1.4499999
+    halfExtents: {x: 1.4499999, y: 1.4499999}
+    reason: Terminal interaction clearance
+  - id: 55242
+    shape: 1
+    center: {x: -6.7999997, y: 0}
+    radius: 0
+    halfExtents: {x: 1.4, y: 2.1}
+    reason: Shock Gate safety clearance
+  navigationNodes:
+  - id: 2397
+    kind: 5
+    position: {x: -1.75, y: -1.15}
+    connectionRadius: 8
+    neighborIds: 38117527933f275a7e6cf4be4eee78f5b6f8
+  - id: 4408
+    kind: 4
+    position: {x: 5.2, y: 0}
+    connectionRadius: 8
+    neighborIds: 5d09933f7e6cf09b84adfdbd78f5b6f8
+  - id: 6394
+    kind: 4
+    position: {x: -7.6, y: -6.2}
+    connectionRadius: 8
+    neighborIds: 75271f85f4be4eee
+  - id: 10101
+    kind: 0
+    position: {x: 0, y: -7.5}
+    connectionRadius: 8
+    neighborIds: 5d09fa18933f84adf4beb6f8
+  - id: 16275
+    kind: 1
+    position: {x: 0, y: 0}
+    connectionRadius: 8
+    neighborIds: 5d0938117527275a7e6cf4be9bd14eee78f5b6f8
+  - id: 23079
+    kind: 3
+    position: {x: 0, y: 5.5}
+    connectionRadius: 8
+    neighborIds: 5d09933f7e6cf09b9bd1d4f378f5b6f8
+  - id: 27774
+    kind: 5
+    position: {x: 1.75, y: 1.15}
+    connectionRadius: 8
+    neighborIds: 5d093811933f275af4be9bd14eee78f5b6f8
+  - id: 34079
+    kind: 2
+    position: {x: -10.2, y: 0}
+    connectionRadius: 8
+    neighborIds: fa184eeed4f3
+  - id: 39920
+    kind: 4
+    position: {x: 7.6, y: 6.2}
+    connectionRadius: 8
+    neighborIds: 3811275afdbd9bd1
+  - id: 44420
+    kind: 4
+    position: {x: 7.6, y: -6.2}
+    connectionRadius: 8
+    neighborIds: 38117527fdbdf4be
+  - id: 48637
+    kind: 2
+    position: {x: 10.2, y: 0}
+    connectionRadius: 8
+    neighborIds: 3811f09b84ad
+  - id: 48884
+    kind: 3
+    position: {x: 0, y: -5.5}
+    connectionRadius: 8
+    neighborIds: 5d09fa187527933f7e6c84ad78f5b6f8
+  - id: 53659
+    kind: 0
+    position: {x: 0, y: 7.5}
+    connectionRadius: 8
+    neighborIds: 933f275a7e6cf09bd4f378f5
+  - id: 61006
+    kind: 4
+    position: {x: -5.2, y: 0}
+    connectionRadius: 8
+    neighborIds: 5d09fa18933f7e6c1f85d4f378f5b6f8
+  - id: 62420
+    kind: 4
+    position: {x: -7.6, y: 6.2}
+    connectionRadius: 8
+    neighborIds: 275a1f859bd14eee
+  - id: 62840
+    kind: 5
+    position: {x: -1.75, y: 1.15}
+    connectionRadius: 8
+    neighborIds: 5d093811933f275a7e6cf4be9bd14eeeb6f8
+  - id: 63670
+    kind: 5
+    position: {x: 1.75, y: -1.15}
+    connectionRadius: 8
+    neighborIds: 5d0938117527933f275a7e6cf4be4eee78f5
+  navigationEdges:
+  - nodeA: 2397
+    nodeB: 4408
+    lengthSquared: 49.625
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 10101
+    lengthSquared: 43.385
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 16275
+    lengthSquared: 4.3849998
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 23079
+    lengthSquared: 47.285
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 27774
+    lengthSquared: 17.539999
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 48884
+    lengthSquared: 21.984999
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 61006
+    lengthSquared: 13.224999
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 62840
+    lengthSquared: 5.29
+    crossedGate: 0
+  - nodeA: 2397
+    nodeB: 63670
+    lengthSquared: 12.25
+    crossedGate: 0
+  - nodeA: 4408
+    nodeB: 16275
+    lengthSquared: 27.039999
+    crossedGate: 0
+  - nodeA: 4408
+    nodeB: 27774
+    lengthSquared: 13.224999
+    crossedGate: 0
+  - nodeA: 4408
+    nodeB: 39920
+    lengthSquared: 44.2
+    crossedGate: 0
+  - nodeA: 4408
+    nodeB: 44420
+    lengthSquared: 44.2
+    crossedGate: 0
+  - nodeA: 4408
+    nodeB: 48637
+    lengthSquared: 25
+    crossedGate: 2627
+  - nodeA: 4408
+    nodeB: 62840
+    lengthSquared: 49.625
+    crossedGate: 0
+  - nodeA: 4408
+    nodeB: 63670
+    lengthSquared: 13.224999
+    crossedGate: 0
+  - nodeA: 6394
+    nodeB: 10101
+    lengthSquared: 59.449997
+    crossedGate: 0
+  - nodeA: 6394
+    nodeB: 34079
+    lengthSquared: 45.2
+    crossedGate: 0
+  - nodeA: 6394
+    nodeB: 48884
+    lengthSquared: 58.25
+    crossedGate: 0
+  - nodeA: 6394
+    nodeB: 61006
+    lengthSquared: 44.2
+    crossedGate: 0
+  - nodeA: 10101
+    nodeB: 16275
+    lengthSquared: 56.25
+    crossedGate: 0
+  - nodeA: 10101
+    nodeB: 44420
+    lengthSquared: 59.449997
+    crossedGate: 0
+  - nodeA: 10101
+    nodeB: 48884
+    lengthSquared: 4
+    crossedGate: 0
+  - nodeA: 10101
+    nodeB: 63670
+    lengthSquared: 43.385
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 23079
+    lengthSquared: 30.25
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 27774
+    lengthSquared: 4.3849998
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 48884
+    lengthSquared: 30.25
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 53659
+    lengthSquared: 56.25
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 61006
+    lengthSquared: 27.039999
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 62840
+    lengthSquared: 4.3849998
+    crossedGate: 0
+  - nodeA: 16275
+    nodeB: 63670
+    lengthSquared: 4.3849998
+    crossedGate: 0
+  - nodeA: 23079
+    nodeB: 27774
+    lengthSquared: 21.984999
+    crossedGate: 0
+  - nodeA: 23079
+    nodeB: 39920
+    lengthSquared: 58.25
+    crossedGate: 0
+  - nodeA: 23079
+    nodeB: 53659
+    lengthSquared: 4
+    crossedGate: 0
+  - nodeA: 23079
+    nodeB: 62420
+    lengthSquared: 58.25
+    crossedGate: 0
+  - nodeA: 23079
+    nodeB: 62840
+    lengthSquared: 21.984999
+    crossedGate: 0
+  - nodeA: 23079
+    nodeB: 63670
+    lengthSquared: 47.285
+    crossedGate: 0
+  - nodeA: 27774
+    nodeB: 48884
+    lengthSquared: 47.285
+    crossedGate: 0
+  - nodeA: 27774
+    nodeB: 53659
+    lengthSquared: 43.385
+    crossedGate: 0
+  - nodeA: 27774
+    nodeB: 61006
+    lengthSquared: 49.625
+    crossedGate: 0
+  - nodeA: 27774
+    nodeB: 62840
+    lengthSquared: 12.25
+    crossedGate: 0
+  - nodeA: 27774
+    nodeB: 63670
+    lengthSquared: 5.29
+    crossedGate: 0
+  - nodeA: 34079
+    nodeB: 61006
+    lengthSquared: 25
+    crossedGate: 11250
+  - nodeA: 34079
+    nodeB: 62420
+    lengthSquared: 45.2
+    crossedGate: 0
+  - nodeA: 39920
+    nodeB: 48637
+    lengthSquared: 45.2
+    crossedGate: 0
+  - nodeA: 39920
+    nodeB: 53659
+    lengthSquared: 59.449997
+    crossedGate: 0
+  - nodeA: 44420
+    nodeB: 48637
+    lengthSquared: 45.2
+    crossedGate: 0
+  - nodeA: 44420
+    nodeB: 48884
+    lengthSquared: 58.25
+    crossedGate: 0
+  - nodeA: 48884
+    nodeB: 62840
+    lengthSquared: 47.285
+    crossedGate: 0
+  - nodeA: 48884
+    nodeB: 63670
+    lengthSquared: 21.984999
+    crossedGate: 0
+  - nodeA: 53659
+    nodeB: 62420
+    lengthSquared: 59.449997
+    crossedGate: 0
+  - nodeA: 53659
+    nodeB: 62840
+    lengthSquared: 43.385
+    crossedGate: 0
+  - nodeA: 61006
+    nodeB: 62420
+    lengthSquared: 44.2
+    crossedGate: 0
+  - nodeA: 61006
+    nodeB: 62840
+    lengthSquared: 13.224999
+    crossedGate: 0
+  - nodeA: 61006
+    nodeB: 63670
+    lengthSquared: 49.625
+    crossedGate: 0
+  - nodeA: 62840
+    nodeB: 63670
+    lengthSquared: 17.539999
+    crossedGate: 0
+  cameraBounds:
+    id: 17640
+    center: {x: 0, y: 0}
+    halfExtents: {x: 15, y: 11}
+    orthographicSize: 11.5

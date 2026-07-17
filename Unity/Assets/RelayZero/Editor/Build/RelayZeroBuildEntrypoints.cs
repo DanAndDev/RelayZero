@@ -8,6 +8,10 @@ namespace RelayZero.Editor.Build
 {
     public static class RelayZeroBuildEntrypoints
     {
+        private const string BootstrapScenePath = "Assets/Scenes/Bootstrap.unity";
+        private const string FrontendScenePath = "Assets/Scenes/Frontend.unity";
+        private const string SwitchyardScenePath = "Assets/Scenes/Switchyard.unity";
+
         [MenuItem("Relay Zero/Build/Client Development")]
         public static void BuildClientDevelopment()
         {
@@ -48,7 +52,6 @@ namespace RelayZero.Editor.Build
 
         public static void Build(RelayZeroBuildProfile profile)
         {
-            RoleSceneSetup.GenerateRoleScenesAndConfiguration();
             BuildSecurityGuard.Validate(profile);
 
             BuildTarget originalTarget = EditorUserBuildSettings.activeBuildTarget;
@@ -110,14 +113,14 @@ namespace RelayZero.Editor.Build
         {
             if (IsServer(profile))
             {
-                return new[] { RoleSceneSetup.BootstrapScenePath };
+                return new[] { BootstrapScenePath };
             }
 
             return new[]
             {
-                RoleSceneSetup.BootstrapScenePath,
-                RoleSceneSetup.FrontendScenePath,
-                RoleSceneSetup.SwitchyardScenePath,
+                BootstrapScenePath,
+                FrontendScenePath,
+                SwitchyardScenePath,
             };
         }
 
