@@ -2,10 +2,15 @@
   "name": "RelayZero.Client.Tests",
   "rootNamespace": "RelayZero.Tests.EditMode.Client",
   "references": [
+    "RelayZero.Foundation",
+    "RelayZero.Simulation",
     "RelayZero.Client.Application",
     "RelayZero.Client.Prediction",
     "RelayZero.Client.Presentation",
-    "RelayZero.Client.UI"
+    "RelayZero.Client.UI",
+    "Unity.InputSystem",
+    "Unity.InputSystem.TestFramework",
+    "Unity.Mathematics"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"

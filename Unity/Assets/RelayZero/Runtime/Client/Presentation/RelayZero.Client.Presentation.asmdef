@@ -3,8 +3,13 @@
   "rootNamespace": "RelayZero.Client.Presentation",
   "references": [
     "RelayZero.Foundation",
+    "RelayZero.Arena",
+    "RelayZero.Arena.Baking",
     "RelayZero.Simulation",
-    "RelayZero.Client.Prediction"
+    "RelayZero.Simulation.Authoring",
+    "RelayZero.Client.Prediction",
+    "Unity.InputSystem",
+    "Unity.Mathematics"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],

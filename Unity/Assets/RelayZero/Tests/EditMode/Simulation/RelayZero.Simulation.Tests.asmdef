@@ -2,7 +2,13 @@
   "name": "RelayZero.Simulation.Tests",
   "rootNamespace": "RelayZero.Tests.EditMode.Simulation",
   "references": [
-    "RelayZero.Simulation"
+    "RelayZero.Foundation",
+    "RelayZero.Arena",
+    "RelayZero.Arena.Baking",
+    "RelayZero.Simulation",
+    "RelayZero.Simulation.Authoring",
+    "RelayZero.Editor.Simulation",
+    "Unity.Mathematics"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"

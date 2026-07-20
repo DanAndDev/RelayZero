@@ -1,10 +1,8 @@
 {
-  "name": "RelayZero.Simulation",
-  "rootNamespace": "RelayZero.Simulation",
+  "name": "RelayZero.Simulation.Authoring",
+  "rootNamespace": "RelayZero.Simulation.Authoring",
   "references": [
-    "RelayZero.Foundation",
-    "RelayZero.Arena",
-    "Unity.Mathematics"
+    "RelayZero.Simulation"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
@@ -14,5 +12,5 @@
   "autoReferenced": true,
   "defineConstraints": [],
   "versionDefines": [],
-  "noEngineReferences": true
+  "noEngineReferences": false
 }

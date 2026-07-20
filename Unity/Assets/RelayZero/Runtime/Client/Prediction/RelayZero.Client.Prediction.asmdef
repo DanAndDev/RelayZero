@@ -4,7 +4,8 @@
   "references": [
     "RelayZero.Foundation",
     "RelayZero.Simulation",
-    "RelayZero.Protocol"
+    "RelayZero.Protocol",
+    "Unity.Mathematics"
   ],
   "includePlatforms": [],
   "excludePlatforms": [],
