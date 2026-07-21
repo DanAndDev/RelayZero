@@ -24,7 +24,38 @@ namespace RelayZero.Tests.EditMode.Simulation
             float2 playerOnePosition)
         {
             PlayerConfigValues values = PlayerConfigValues.GddDefaults;
-            MatchConfig config = ConfigCompiler.Compile(in values);
+            CoreConfigValues coreValues = CoreConfigValues.GddDefaults;
+            return Create(arena, playerZeroPosition, playerOnePosition, in values, in coreValues);
+        }
+
+        public static MatchSimulation Create(
+            ArenaBakeData arena,
+            float2 playerZeroPosition,
+            float2 playerOnePosition,
+            in PlayerConfigValues playerValues,
+            in CoreConfigValues coreValues)
+        {
+            RegulationConfigValues regulationValues = RegulationConfigValues.GddDefaults;
+            return Create(
+                arena,
+                playerZeroPosition,
+                playerOnePosition,
+                in playerValues,
+                in coreValues,
+                in regulationValues,
+                MatchStartMode.Regulation);
+        }
+
+        public static MatchSimulation Create(
+            ArenaBakeData arena,
+            float2 playerZeroPosition,
+            float2 playerOnePosition,
+            in PlayerConfigValues playerValues,
+            in CoreConfigValues coreValues,
+            in RegulationConfigValues regulationValues,
+            MatchStartMode startMode)
+        {
+            MatchConfig config = ConfigCompiler.Compile(in playerValues, in coreValues, in regulationValues);
             MatchRoster roster = new MatchRoster(
                 new PlayerId(Guid.Parse("11111111-1111-1111-1111-111111111111")),
                 new PlayerId(Guid.Parse("22222222-2222-2222-2222-222222222222")));
@@ -33,10 +64,29 @@ namespace RelayZero.Tests.EditMode.Simulation
                 0xC0FFEEul,
                 roster,
                 playerZeroPosition,
-                playerOnePosition);
+                playerOnePosition,
+                new float2(0f, 1f),
+                new float2(0f, -1f),
+                startMode);
             MatchSimulation simulation = new MatchSimulation();
             simulation.Initialize(config, arena, in initialization);
             return simulation;
+        }
+
+        public static MatchSimulation CreateCountdown(float2 playerZeroPosition, float2 playerOnePosition)
+        {
+            ArenaBakeData arena = CreateOpenArena();
+            PlayerConfigValues playerValues = PlayerConfigValues.GddDefaults;
+            CoreConfigValues coreValues = CoreConfigValues.GddDefaults;
+            RegulationConfigValues regulationValues = RegulationConfigValues.GddDefaults;
+            return Create(
+                arena,
+                playerZeroPosition,
+                playerOnePosition,
+                in playerValues,
+                in coreValues,
+                in regulationValues,
+                MatchStartMode.Countdown);
         }
 
         public static ArenaBakeData CreateOpenArena(float halfExtent = 20f)
@@ -73,6 +123,24 @@ namespace RelayZero.Tests.EditMode.Simulation
                 new SimulationTick(tick),
                 new CommandSequence(sequence),
                 move);
+        }
+
+        public static InputCommand Command(
+            float2 move,
+            InputButtons pressedButtons,
+            uint tick,
+            uint sequence,
+            float2 aim = default)
+        {
+            return new InputCommand(
+                new SimulationTick(tick),
+                new CommandSequence(sequence),
+                move,
+                aim,
+                pressedButtons,
+                InputButtons.None,
+                SimulationTick.Zero,
+                0u);
         }
     }
 }

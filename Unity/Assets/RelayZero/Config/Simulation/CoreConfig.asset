@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e17991e0ed4d9b9ad462cfd6088134, type: 3}
+  m_Name: CoreConfig
+  m_EditorClassIdentifier: RelayZero.Simulation.Authoring::RelayZero.Simulation.Authoring.CoreConfigAsset
+  interactionRangeMeters: 1.1
+  pickupDistanceTieThresholdMeters: 0.05
+  radiusMeters: 0.3
+  manualDropSpeedMetersPerSecond: 4.5
+  forcedDropPickupLockSeconds: 0.35
+  manualDropOpponentPickupLockSeconds: 0.2
+  manualDropPreviousOwnerPickupLockSeconds: 0.75
+  maximumLooseSpeedMetersPerSecond: 12
+  restitution: 0.55
+  tangentialVelocityRetention: 0.85
+  planarDragPerSecond: 3
+  restSpeedThresholdMetersPerSecond: 0.05
+  restQualificationSeconds: 0.25
+  invalidResetDelaySeconds: 3
+  resettingDurationSeconds: 1.5
+  centerLockDurationSeconds: 0.5

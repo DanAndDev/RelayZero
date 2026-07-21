@@ -20,6 +20,12 @@ namespace RelayZero.Simulation
             float maximumDelta = rate / SimulationTime.TicksPerSecond;
 
             player.Velocity = MoveTowards(player.Velocity, desiredVelocity, maximumDelta);
+            float speedSquared = math.lengthsq(player.Velocity);
+            if (speedSquared > maximumSpeed * maximumSpeed)
+            {
+                player.Velocity *= maximumSpeed * math.rsqrt(speedSquared);
+            }
+
             UpdateFacing(ref player, in command, in config);
             return player.Velocity / SimulationTime.TicksPerSecond;
         }

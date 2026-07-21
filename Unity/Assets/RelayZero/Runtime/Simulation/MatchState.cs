@@ -1,4 +1,5 @@
 using RelayZero.Foundation;
+using Unity.Mathematics;
 
 namespace RelayZero.Simulation
 {
@@ -8,7 +9,10 @@ namespace RelayZero.Simulation
 
         private readonly PlayerState[] players;
 
-        internal MatchState(in MatchInitialization initialization)
+        internal MatchState(
+            in MatchInitialization initialization,
+            float2 corePosition,
+            in RegulationConfig regulationConfig)
         {
             MatchId = initialization.MatchId;
             MatchSeed = initialization.MatchSeed;
@@ -24,6 +28,9 @@ namespace RelayZero.Simulation
                 PlayerSlot.One,
                 initialization.PlayerOnePosition,
                 initialization.PlayerOneFacingDirection);
+            Core = new CoreRuntimeState(corePosition);
+            Score = default;
+            Clock = new MatchClockState(initialization.StartMode, in regulationConfig);
         }
 
         public MatchId MatchId { get; }
@@ -31,6 +38,12 @@ namespace RelayZero.Simulation
         public ulong MatchSeed { get; }
 
         public SimulationTick Tick { get; internal set; }
+
+        public CoreRuntimeState Core { get; internal set; }
+
+        public ScoreRuntimeState Score { get; internal set; }
+
+        public MatchClockState Clock { get; internal set; }
 
         public PlayerState GetPlayer(PlayerSlot slot)
         {

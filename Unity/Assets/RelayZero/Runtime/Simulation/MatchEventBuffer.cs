@@ -46,7 +46,35 @@ namespace RelayZero.Simulation
             }
 
             byte eventIndex = checked((byte)Count);
-            events[Count] = new MatchEvent(new MatchEventId(Tick, eventIndex), type, playerSlot, value);
+            events[Count] = new MatchEvent(
+                new MatchEventId(Tick, eventIndex),
+                type,
+                true,
+                playerSlot,
+                value);
+            Count++;
+        }
+
+        public void Add(MatchEventType type, int value = 0)
+        {
+            if (type == MatchEventType.None)
+            {
+                throw new ArgumentOutOfRangeException(nameof(type), "An emitted event requires a concrete type.");
+            }
+
+            if (Count >= Capacity)
+            {
+                throw new InvalidOperationException(
+                    "The per-tick match event capacity was exceeded; authoritative events cannot be dropped.");
+            }
+
+            byte eventIndex = checked((byte)Count);
+            events[Count] = new MatchEvent(
+                new MatchEventId(Tick, eventIndex),
+                type,
+                false,
+                default,
+                value);
             Count++;
         }
 

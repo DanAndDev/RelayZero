@@ -3,7 +3,11 @@
   "rootNamespace": "RelayZero.Tests.PlayMode",
   "references": [
     "RelayZero.Bootstrap",
-    "RelayZero.Foundation"
+    "RelayZero.Foundation",
+    "RelayZero.Arena",
+    "RelayZero.Simulation",
+    "RelayZero.Client.Presentation",
+    "Unity.Mathematics"
   ],
   "optionalUnityReferences": [
     "TestAssemblies"

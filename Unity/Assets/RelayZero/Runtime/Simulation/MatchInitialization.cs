@@ -19,7 +19,8 @@ namespace RelayZero.Simulation
                 playerZeroPosition,
                 playerOnePosition,
                 new float2(0f, 1f),
-                new float2(0f, -1f))
+                new float2(0f, -1f),
+                MatchStartMode.Countdown)
         {
         }
 
@@ -31,6 +32,27 @@ namespace RelayZero.Simulation
             float2 playerOnePosition,
             float2 playerZeroFacingDirection,
             float2 playerOneFacingDirection)
+            : this(
+                matchId,
+                matchSeed,
+                roster,
+                playerZeroPosition,
+                playerOnePosition,
+                playerZeroFacingDirection,
+                playerOneFacingDirection,
+                MatchStartMode.Countdown)
+        {
+        }
+
+        public MatchInitialization(
+            MatchId matchId,
+            ulong matchSeed,
+            MatchRoster roster,
+            float2 playerZeroPosition,
+            float2 playerOnePosition,
+            float2 playerZeroFacingDirection,
+            float2 playerOneFacingDirection,
+            MatchStartMode startMode)
         {
             if (!matchId.IsValid)
             {
@@ -66,6 +88,11 @@ namespace RelayZero.Simulation
                     "Initial facing direction must be finite and non-zero.");
             }
 
+            if ((uint)startMode > (uint)MatchStartMode.Regulation)
+            {
+                throw new ArgumentOutOfRangeException(nameof(startMode));
+            }
+
             MatchId = matchId;
             MatchSeed = matchSeed;
             Roster = roster;
@@ -73,6 +100,7 @@ namespace RelayZero.Simulation
             PlayerOnePosition = playerOnePosition;
             PlayerZeroFacingDirection = normalizedPlayerZeroFacing;
             PlayerOneFacingDirection = normalizedPlayerOneFacing;
+            StartMode = startMode;
         }
 
         public MatchId MatchId { get; }
@@ -89,6 +117,8 @@ namespace RelayZero.Simulation
 
         public float2 PlayerOneFacingDirection { get; }
 
+        public MatchStartMode StartMode { get; }
+
         internal void Validate()
         {
             if (!MatchId.IsValid)
@@ -103,7 +133,8 @@ namespace RelayZero.Simulation
 
             if (!IsFinite(PlayerZeroPosition) || !IsFinite(PlayerOnePosition) ||
                 !TryNormalizeDirection(PlayerZeroFacingDirection, out _) ||
-                !TryNormalizeDirection(PlayerOneFacingDirection, out _))
+                !TryNormalizeDirection(PlayerOneFacingDirection, out _) ||
+                (uint)StartMode > (uint)MatchStartMode.Regulation)
             {
                 throw new ArgumentOutOfRangeException(
                     nameof(PlayerZeroPosition),

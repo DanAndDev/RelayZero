@@ -42,5 +42,18 @@ namespace RelayZero.Tests.EditMode.Simulation
             Assert.That(buffer[0].PlayerSlot, Is.EqualTo(PlayerSlot.One));
             Assert.That(buffer.AsSpan().Length, Is.EqualTo(1));
         }
+
+        [Test]
+        public void BufferRepresentsCoreResetEventsWithoutInventingAPlayerSubject()
+        {
+            MatchEventBuffer buffer = new MatchEventBuffer();
+            buffer.Reset(new SimulationTick(9u));
+
+            buffer.Add(MatchEventType.CoreResetStarted);
+
+            Assert.That(buffer.Count, Is.EqualTo(1));
+            Assert.That(buffer[0].Type, Is.EqualTo(MatchEventType.CoreResetStarted));
+            Assert.That(buffer[0].HasPlayerSlot, Is.False);
+        }
     }
 }

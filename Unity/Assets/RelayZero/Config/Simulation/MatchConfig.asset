@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740f319fdf8670b4bb827c77d425f2fc, type: 3}
   m_Name: MatchConfig
   m_EditorClassIdentifier: RelayZero.Simulation.Authoring::RelayZero.Simulation.Authoring.MatchConfigAsset
-  schemaVersion: 1
+  schemaVersion: 3
   playerConfig: {fileID: 11400000, guid: ab53b66e360737d48a720fa637ffd96b, type: 2}
+  coreConfig: {fileID: 11400000, guid: c859d62283894843b97668db0a8c111d, type: 2}
+  regulationConfig: {fileID: 11400000, guid: 0646d2f30f3d4852b4c92eeed6ac6d8d, type: 2}

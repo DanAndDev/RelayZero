@@ -4,10 +4,16 @@ namespace RelayZero.Simulation
 {
     public readonly struct MatchEvent
     {
-        internal MatchEvent(MatchEventId id, MatchEventType type, PlayerSlot playerSlot, int value)
+        internal MatchEvent(
+            MatchEventId id,
+            MatchEventType type,
+            bool hasPlayerSlot,
+            PlayerSlot playerSlot,
+            int value)
         {
             Id = id;
             Type = type;
+            HasPlayerSlot = hasPlayerSlot;
             PlayerSlot = playerSlot;
             Value = value;
         }
@@ -15,6 +21,8 @@ namespace RelayZero.Simulation
         public MatchEventId Id { get; }
 
         public MatchEventType Type { get; }
+
+        public bool HasPlayerSlot { get; }
 
         public PlayerSlot PlayerSlot { get; }
 

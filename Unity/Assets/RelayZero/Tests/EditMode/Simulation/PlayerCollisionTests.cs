@@ -411,7 +411,10 @@ namespace RelayZero.Tests.EditMode.Simulation
                 0xC0FFEEul,
                 roster,
                 playerZeroPosition,
-                playerOnePosition);
+                playerOnePosition,
+                new float2(0f, 1f),
+                new float2(0f, -1f),
+                MatchStartMode.Regulation);
             MatchSimulation simulation = new MatchSimulation();
             simulation.Initialize(config, SimulationTestFactory.CreateOpenArena(), in initialization);
             return simulation;
@@ -447,7 +450,16 @@ namespace RelayZero.Tests.EditMode.Simulation
             BakedSpawn zero = FindSpawn(arena, 0);
             BakedSpawn one = FindSpawn(arena, 1);
             PlayerConfigValues values = PlayerConfigValues.GddDefaults;
-            MatchConfig config = ConfigCompiler.Compile(in values);
+            CoreConfigValues coreValues = CoreConfigValues.GddDefaults;
+            RegulationConfigValues regulationValues = new RegulationConfigValues(
+                3f,
+                3600f,
+                100,
+                1000,
+                2000,
+                0.5f,
+                1.5f);
+            MatchConfig config = ConfigCompiler.Compile(in values, in coreValues, in regulationValues);
             MatchRoster roster = new MatchRoster(
                 new PlayerId(Guid.Parse("11111111-1111-1111-1111-111111111111")),
                 new PlayerId(Guid.Parse("22222222-2222-2222-2222-222222222222")));
@@ -458,7 +470,8 @@ namespace RelayZero.Tests.EditMode.Simulation
                 zero.Position,
                 one.Position,
                 zero.FacingDirection,
-                one.FacingDirection);
+                one.FacingDirection,
+                MatchStartMode.Regulation);
             MatchSimulation simulation = new MatchSimulation();
             simulation.Initialize(config, arena, in initialization);
             return simulation;
